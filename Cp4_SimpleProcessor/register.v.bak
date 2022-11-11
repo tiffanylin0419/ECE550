@@ -1,0 +1,22 @@
+module register(Q, D, clk, en, clr);
+
+   //Inputs
+   input [31:0]D;
+	input clk, en, clr;
+   
+   //Internal wire
+   wire clr;
+
+   //Output
+   output [31:0]Q;
+
+   /* YOUR CODE HERE */
+	
+	genvar i;
+	generate
+		for (i = 0; i<= 31; i = i + 1) begin:hi0
+			dffe_ref d(Q[i], D[i], clk, en, clr);
+		end
+	endgenerate
+	
+endmodule

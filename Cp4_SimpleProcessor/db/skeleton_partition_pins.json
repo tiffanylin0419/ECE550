@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "imem_clock",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_clock",
+					"strict" : false
+				},
+				{
+					"name" : "processor_clock",
+					"strict" : false
+				},
+				{
+					"name" : "regfile_clock",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

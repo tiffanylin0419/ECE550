@@ -1,0 +1,340 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/simulation/modelsim
+valu
+Z1 !s110 1668183162
+!i10b 1
+!s100 CM2POFHhm`MRQRPIcjMQG0
+I6Z3<VWXTeY`bUEkeVoI>O2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1666962950
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/alu.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1668183162.000000
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference
+Z7 tCvgOpt 0
+vbit12_counter
+Z8 !s110 1668183163
+!i10b 1
+!s100 DPaTcN<GjlP4g5>T3jF;]3
+IOMBdoF=O<H7C=RR=ASfhA0
+R2
+R0
+w1666985644
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/bit12_counter.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/bit12_counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1668183163.000000
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/bit12_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/bit12_counter.v|
+!i113 1
+R5
+Z10 !s92 -vlog01compat -work work +incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out
+R7
+vclock2
+R8
+!i10b 1
+!s100 iGc>VN;C<A2lWkEWh4RKV0
+I5fG8ZaVPE17h@XkPN]h5_0
+R2
+R0
+w1667414310
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/clock2.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/clock2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/clock2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/clock2.v|
+!i113 1
+R5
+R10
+R7
+vcontrol_circuit
+R8
+!i10b 1
+!s100 8ZHU69A0oWjfOIm62kK7e2
+ITdcGDaD5f>?NIVb@o9Sbl0
+R2
+R0
+w1667416722
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/control_circuit.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/control_circuit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/control_circuit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/control_circuit.v|
+!i113 1
+R5
+R10
+R7
+vdffe_ref
+R8
+!i10b 1
+!s100 a6:c_NVXR2]1R8zX^D_eo3
+I^G8Hf7?ijl[`IiHY7H3fO0
+R2
+R0
+w1666981266
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/dffe_ref.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/dffe_ref.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/dffe_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/dffe_ref.v|
+!i113 1
+R5
+R10
+R7
+vdmem
+R8
+!i10b 1
+!s100 :_CnPz_9^IOZf^LY1B88U0
+IHo9gh5^M>RZ1W[c3WKgJO0
+R2
+R0
+w1666970900
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/dmem.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/dmem.v
+Z11 L0 40
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/dmem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/dmem.v|
+!i113 1
+R5
+Z12 !s92 -vlog01compat -work work +incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base
+R7
+vfull_adder
+R8
+!i10b 1
+!s100 oC>=EGzf=Tn_<ZIYkbGG=0
+I7SMGB]:dboYD4HSl_TV<=2
+R2
+R0
+w1666984576
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/full_adder.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/full_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/full_adder.v|
+!i113 1
+R5
+R10
+R7
+vimem
+R1
+!i10b 1
+!s100 LzJJEizN;Ch9OB?nIidB53
+I:UADHV[X6bd4Pb1F`6_@K3
+R2
+R0
+w1666970520
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/imem.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/imem.v
+R11
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/imem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/imem.v|
+!i113 1
+R5
+R12
+R7
+vmath
+R8
+!i10b 1
+!s100 VUNk8l7X762nhKhAz8GfM0
+I0dC]?2^6C^kf5]7?^6WEC2
+R2
+R0
+w1667418344
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/math.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/math.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/math.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/math.v|
+!i113 1
+R5
+R10
+R7
+vpc
+R8
+!i10b 1
+!s100 bPd;7MmA8fn>PLVgII05H0
+IMZHm[V^cZ>R?[LKH@n9d23
+R2
+R0
+w1667077044
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/pc.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/pc.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/pc.v|
+!i113 1
+R5
+R10
+R7
+vprocessor
+R1
+!i10b 1
+!s100 o`oD[FP=9aUQ3;hW;G0FD3
+Ih5_MLXdW561jf5HT:mj@S1
+R2
+R0
+w1668181441
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/processor.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/processor.v
+L0 50
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/processor.v|
+!i113 1
+R5
+R12
+R7
+vregfile
+R1
+!i10b 1
+!s100 A]cnH0bMU1@F^3>cG4o1z1
+IKNR>n=kGdd9bCciRL[aJZ1
+R2
+R0
+w1667850204
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/regfile.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/regfile.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/reference/regfile.v|
+!i113 1
+R5
+R6
+R7
+vregister
+R8
+!i10b 1
+!s100 KejOd_9JQjXiGQK4d4XVP0
+IA_3`GOfV;P=zL3XZ5a1@Y0
+R2
+R0
+w1666981430
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/register.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/register.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/register.v|
+!i113 1
+R5
+R10
+R7
+vskeleton
+R1
+!i10b 1
+!s100 ^Wbme9:o1iL6LZeJDCi3Z3
+IMKfSCab2b6]j:QLnIeNIB2
+R2
+R0
+w1667851515
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/skeleton.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/skeleton.v
+L0 12
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/skeleton.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/PC4_SimpleProcessor_basecode/cpuone-base/skeleton.v|
+!i113 1
+R5
+R12
+R7
+vskeleton_tb
+R8
+!i10b 1
+!s100 N8og<7mB@AQz3X4_LGL:T0
+Ic6T7U4T5XldATh;[9e^:k2
+R2
+R0
+w1668181249
+8C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/skeleton_tb.v
+FC:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/skeleton_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/skeleton_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out|C:/Users/tl330/Documents/550/Cp4_SimpleProcessor_no_out/skeleton_tb.v|
+!i113 1
+R5
+R10
+R7

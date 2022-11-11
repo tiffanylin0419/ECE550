@@ -1,0 +1,14 @@
+module clock2(clk,reset,clk2);
+	input clk,reset;
+	output reg clk2;
+	
+	always @(posedge clk)
+		begin
+			if (reset)
+				clk_out <= 1'b0;
+			else
+				clk_out <= ~clk_out;	
+		end
+	
+	
+endmodule
