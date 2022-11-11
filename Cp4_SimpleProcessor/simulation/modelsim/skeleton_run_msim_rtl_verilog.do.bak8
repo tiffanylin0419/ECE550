@@ -5,7 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor {C:/Users/tl330/Documents/550/Cp4_SimpleProcessor/clock4.v}
 vlog -vlog01compat -work work +incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor/PC4_SimpleProcessor_basecode/reference {C:/Users/tl330/Documents/550/Cp4_SimpleProcessor/PC4_SimpleProcessor_basecode/reference/regfile.v}
 vlog -vlog01compat -work work +incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor/PC4_SimpleProcessor_basecode/reference {C:/Users/tl330/Documents/550/Cp4_SimpleProcessor/PC4_SimpleProcessor_basecode/reference/alu.v}
 vlog -vlog01compat -work work +incdir+C:/Users/tl330/Documents/550/Cp4_SimpleProcessor/PC4_SimpleProcessor_basecode/cpuone-base {C:/Users/tl330/Documents/550/Cp4_SimpleProcessor/PC4_SimpleProcessor_basecode/cpuone-base/skeleton.v}

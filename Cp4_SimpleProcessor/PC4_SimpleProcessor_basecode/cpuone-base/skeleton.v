@@ -10,8 +10,8 @@
  */
 	
 module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock);
-    wire [31:0]aluin1,aluin2,aluout,immediate;
 	 input clock, reset;
+	 output imem_clock, dmem_clock, processor_clock, regfile_clock;
     /* 
         Create four clocks for each module from the original input "clock".
         These four outputs will be used to run the clocked elements of your processor on the grading side. 
@@ -25,14 +25,12 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 //ta ~41~41
 	 assign imem_clock=clock;
 	 assign dmem_clock=clock;
-	 wire temp_clock;
-	 clock2 c0(clock,reset,temp_clock);
-	 clock2 c2(~temp_clock,reset,regfile_clock);
-	 clock2 c1(~temp_clock,reset,processor_clock);
+	 clock4 c1(~clock,reset,regfile_clock);
+	 clock4 c2(~clock,reset,processor_clock);
 	 
 	 
 	 
-    output imem_clock, dmem_clock, processor_clock, regfile_clock;
+   
 		
 		
 

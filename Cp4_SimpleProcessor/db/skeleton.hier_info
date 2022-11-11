@@ -1,28 +1,30 @@
 |skeleton
-clock => clock.IN3
-reset => reset.IN5
-imem_clock << clock.DB_MAX_OUTPUT_PORT_TYPE
-dmem_clock << clock.DB_MAX_OUTPUT_PORT_TYPE
+clock => dmem_clock.IN2
+reset => reset.IN4
+imem_clock << dmem_clock.DB_MAX_OUTPUT_PORT_TYPE
+dmem_clock << dmem_clock.DB_MAX_OUTPUT_PORT_TYPE
 processor_clock << processor_clock.DB_MAX_OUTPUT_PORT_TYPE
 regfile_clock << regfile_clock.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|clock2:c0
-clk => clk2~reg0.CLK
-reset => clk2.OUTPUTSELECT
-clk2 <= clk2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|skeleton|clock4:c1
+clk => clk_track.CLK
+clk => r_reg[0].CLK
+clk => r_reg[1].CLK
+reset => clk_track.ACLR
+reset => r_reg[0].ACLR
+reset => r_reg[1].ACLR
+clk4 <= clk_track.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|clock2:c2
-clk => clk2~reg0.CLK
-reset => clk2.OUTPUTSELECT
-clk2 <= clk2~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|skeleton|clock2:c1
-clk => clk2~reg0.CLK
-reset => clk2.OUTPUTSELECT
-clk2 <= clk2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|skeleton|clock4:c2
+clk => clk_track.CLK
+clk => r_reg[0].CLK
+clk => r_reg[1].CLK
+reset => clk_track.ACLR
+reset => r_reg[0].ACLR
+reset => r_reg[1].ACLR
+clk4 <= clk_track.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |skeleton|imem:my_imem

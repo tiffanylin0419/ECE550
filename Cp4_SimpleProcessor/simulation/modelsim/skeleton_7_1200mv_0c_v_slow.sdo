@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "skeleton")
-  (DATE "11/11/2022 11:12:12")
+  (DATE "11/11/2022 11:56:56")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition")
@@ -42,8 +42,8 @@
     (INSTANCE imem_clock\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (2791:2791:2791) (2886:2886:2886))
-        (IOPATH i o (2578:2578:2578) (2544:2544:2544))
+        (PORT i (561:561:561) (631:631:631))
+        (IOPATH i o (2568:2568:2568) (2534:2534:2534))
       )
     )
   )
@@ -52,8 +52,8 @@
     (INSTANCE dmem_clock\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (2791:2791:2791) (2886:2886:2886))
-        (IOPATH i o (2558:2558:2558) (2524:2524:2524))
+        (PORT i (561:561:561) (631:631:631))
+        (IOPATH i o (2568:2568:2568) (2534:2534:2534))
       )
     )
   )
@@ -62,7 +62,7 @@
     (INSTANCE processor_clock\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (655:655:655) (655:655:655))
+        (PORT i (550:550:550) (522:522:522))
         (IOPATH i o (2540:2540:2540) (2519:2519:2519))
       )
     )
@@ -72,8 +72,8 @@
     (INSTANCE regfile_clock\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (655:655:655) (655:655:655))
-        (IOPATH i o (2560:2560:2560) (2539:2539:2539))
+        (PORT i (550:550:550) (522:522:522))
+        (IOPATH i o (2520:2520:2520) (2499:2499:2499))
       )
     )
   )
@@ -82,7 +82,25 @@
     (INSTANCE clock\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (644:644:644) (728:728:728))
+        (IOPATH i o (714:714:714) (798:798:798))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_clkctrl")
+    (INSTANCE clock\~inputclkctrl)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (162:162:162) (156:156:156))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE c1\|r_reg\[0\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datac combout (366:366:366) (380:380:380))
       )
     )
   )
@@ -91,40 +109,29 @@
     (INSTANCE reset\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (652:652:652) (737:737:737))
+        (IOPATH i o (704:704:704) (788:788:788))
       )
     )
   )
   (CELL
-    (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE c0\|clk2\~0)
+    (CELLTYPE "cycloneive_clkctrl")
+    (INSTANCE reset\~inputclkctrl)
     (DELAY
       (ABSOLUTE
-        (PORT datab (887:887:887) (833:833:833))
-        (PORT datad (2623:2623:2623) (2813:2813:2813))
-        (IOPATH datab combout (391:391:391) (399:399:399))
-        (IOPATH datad combout (144:144:144) (125:125:125))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE c0\|clk2\~feeder)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (885:885:885) (805:805:805))
-        (IOPATH dataa combout (380:380:380) (377:377:377))
+        (PORT inclk[0] (162:162:162) (156:156:156))
       )
     )
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE c0\|clk2)
+    (INSTANCE c1\|r_reg\[0\])
     (DELAY
       (ABSOLUTE
-        (PORT clk (1107:1107:1107) (1069:1069:1069))
+        (PORT clk (1927:1927:1927) (1947:1947:1947))
         (PORT d (80:80:80) (90:90:90))
+        (PORT clrn (1963:1963:1963) (1923:1923:1923))
         (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+        (IOPATH (negedge clrn) q (199:199:199) (199:199:199))
       )
     )
     (TIMINGCHECK
@@ -133,10 +140,10 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE c1\|clk2\~0)
+    (INSTANCE c1\|clk_track\~0)
     (DELAY
       (ABSOLUTE
-        (PORT datad (2623:2623:2623) (2813:2813:2813))
+        (PORT datad (236:236:236) (299:299:299))
         (IOPATH datac combout (366:366:366) (380:380:380))
         (IOPATH datad combout (144:144:144) (125:125:125))
       )
@@ -144,12 +151,14 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE c1\|clk2)
+    (INSTANCE c1\|clk_track)
     (DELAY
       (ABSOLUTE
-        (PORT clk (911:911:911) (859:859:859))
+        (PORT clk (1927:1927:1927) (1947:1947:1947))
         (PORT d (80:80:80) (90:90:90))
+        (PORT clrn (1963:1963:1963) (1923:1923:1923))
         (IOPATH (posedge clk) q (213:213:213) (213:213:213))
+        (IOPATH (negedge clrn) q (199:199:199) (199:199:199))
       )
     )
     (TIMINGCHECK
