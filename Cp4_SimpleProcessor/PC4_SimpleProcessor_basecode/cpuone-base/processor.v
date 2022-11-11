@@ -93,6 +93,9 @@ module processor(
 
     /* YOUR CODE STARTS HERE */
 	 wire [11:0]pc_in,pc_out;
+	 wire [31:0] pc1_32,pcn1_32;
+	 wire[11:0]pc1,pcn1;
+	 wire w0,w1,w2;
 	 
 	 wire [4:0]opcode,rd,rs,rt,shamt,aluop;
 	 wire[31:0]immediate;
@@ -106,12 +109,23 @@ module processor(
 	 wire [31:0]aluin1,aluin2,aluout;//?wire
 	 wire isNotEqual, isLessThan;
 	 
-	 wire the_R, the_addi,the_sw,the_lw,the_beq,the_j;
-	 wire Rwe,Rwd,Rdst,ALUop,ALUinB,DMwe;
+	 wire the_R, the_addi,the_sw,the_lw,the_beq,the_j,the_bne,the_blt;
+	 wire DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB,BNE,BLT;
 	 //pc & imem
 	 
-	 pc pc1(clock, reset, pc_in, pc_out);
-	 bit12_counter c2(pc_out,pc_in);
+	 
+	 
+	 pc pc01(clock, reset, pc_in, pc_out);
+	 bit12_counter c2(pc_out,pc1);
+	 assign pc1_32[11:0]=pc1;
+	 assign pc1_32[31:12]=0;
+	 alu alu2(pc1_32,immediate, 5'b00000,5'b00000, pcn1_32,,,);
+	 and a1(w0,BNE,isNotEqual);
+	 and a2(w1,BLT,isLessThan);
+	 or o1(w2,w0,w1);
+	 assign pcn1=pcn1_32[11:0];
+	 assign pc_in=w2?pcn1:pc1;
+	 
 	 assign address_imem=pc_out[11:0];
 	 
 	 //regfile
@@ -137,13 +151,13 @@ module processor(
 
 	 
 	 // control_circuit(opcode, DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB);
-	 control_circuit c1( opcode,the_R, the_addi,the_sw,the_lw,the_beq,the_j,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB);
+	 control_circuit c1( opcode,the_R, the_addi,the_sw,the_lw,the_beq,the_j,the_bne,the_blt,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB,BNE,BLT);
 	 
 	 assign overflow=(is_overflow&(is_addi|is_add|is_sub));
 	 assign ctrl_writeEnable=Rwe;
 	 assign ctrl_writeReg=overflow?5'b11110:rd;//rd
-	 assign ctrl_readRegA=rs;
-	 assign ctrl_readRegB=the_sw?rd:rt;//rd when sw
+	 assign ctrl_readRegA=(the_bne|the_blt)?rd:rs;
+	 assign ctrl_readRegB=(the_bne|the_blt)?rs:the_sw?rd:rt;//rd when sw
 	 assign data_writeReg=Rwd?q_dmem:~overflow?aluout:is_add?32'd1:is_addi?32'd2:is_sub?32'd3:32'd0;
 	 
 	 //alu
